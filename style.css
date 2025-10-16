@@ -1,0 +1,657 @@
+/* bgc#fff */
+/* #90c7e3 */
+
+/* lets use the CSS universal selector using the astrick to maytch elements of any type */
+
+/* /* type shift * not ctrl * and type curly braces, so dont type erro */
+* {
+  /* bxbb i now have a universal selector */
+  /* when i changed the border box to content box it shffled the main sections around */
+  box-sizing: border-box;
+  /* i now have a universal selector for all HTML elements  */
+}
+/*  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #555;
+  /* ffa  */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  /* bgcf#fff/bxsd/m:a 8/mw960/maw 2048/w80% */
+  background-color: #90c7e3;
+  background-image: linear-gradient(to bottom, #fff, #90c7e3);
+
+  border: 1px solid #003;
+
+  box-shadow: 3px 3px 3px #333;
+}
+
+#wrapper {
+  margin: auto;
+  max-width: 75rem;
+  /* the over width of container will be 80 % */
+  width: 80%;
+}
+
+header {
+  /* bgc#002171 */
+  background-color: #000032;
+  /* bgi */
+  background-image: url(images/sunset.jpg);
+
+  background-position: right;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  /* display: flex; */
+  height: auto;
+  padding: 1rem;
+  /* only aligned the text and not the ul bullet points */
+  text-align: center;
+}
+
+header a {
+  /* no under line for my hyperlink, squigglyunder colon */
+  text-decoration: none;
+}
+/* x */
+header a::link,
+header a::visited {
+  color: #fff;
+}
+/* for hover */
+header a::hover {
+  color: #90c7e3;
+}
+/* a */
+aside {
+  padding: 0 1em;
+}
+
+nav {
+  font-size: 120%;
+  /* changing font of navigation //fwb */
+  font-weight: bold;
+  /* 1.5em unit in following order:top right bottonm left//same as filling in all paddings at 1.5em */
+  /* padding: 0; */
+  padding: 1.5em;
+
+  /* x had to remove width ch 8 executes correctly but had error while this version was correct*/
+  /* width: 160px; */
+  text-align: center;
+}
+
+nav ul {
+  /* turns the list into a felxable layout container */
+  display: flex;
+  /* stacks the list item vertically */
+  flex-direction: column;
+  /* each list item stretches  to fill the width of the menu */
+  align-items: stretch;
+  /* makes sure the menu doesnt exceed the container width */
+  max-width: 100%;
+  /* includes paddingand border inside the width of the list */
+  box-sizing: border-box;
+  /* allows items to move to to a new line if needed */
+  flex-wrap: wrap;
+
+  /* we want to only target the nav unordered list */
+
+  /* list style none// bullet points reappeared with responsive codings and querries also doesnt respond correctly in github only in live server extension previews CHAPTER 8, UBER EATS */
+  /* removes th default bullet points */
+  list-style: none;
+
+  /* removed the bullet points/list markers */
+
+  /* removes the default spacing outside the list */
+  margin: 0;
+  /* removes default left padding */
+  padding-left: 0;
+  /* padding: auto; */
+}
+
+nav li {
+  /* adds a bottom border to each list item */
+  border-bottom: 1px solid #003;
+  /* adds verticale padding to each list item//error padding was in em not rem */
+  padding: 0.5rem 0;
+  /* ensures items stay within the navigation bar */
+  max-width: 100%;
+  /*THE MAX WIDTH 100% ENSURES ITEMS STAY WITHIN THE NAVIGATION BAR. THE BOX SIZING BORDER BOX ENSURES THE PADDING AND THE BORDER ARE INCLUDED IN THE WIDTH, PREVENTING OVERFLOWS.WHY USE BORDER BOXING HERE IF ALREADY INCLUDED IT IN UNOVERSAL STYLE AT THE TOP OF THE PAGE ABOVE. WITHOUT IT PADD AND BORDERS GET ADDED TO THE ELEMENTS WIDTH WHICH CAN CAUSE LAYOUT PROBLEMS.uSING BORDER BOX MAKES SIZING EASIER AND AND MORE PREDICTABLE. */
+  box-sizing: border-box;
+}
+/*  */
+nav a {
+  /* tdn */
+  /* or txd */
+  text-decoration: none;
+  /*  add transition */
+  transition: color 3s eases-out;
+}
+
+nav a:link {
+  color: #5c7fa3;
+}
+nav a:visited {
+  color: #344873;
+}
+nav a:hover {
+  color: #a52a2a;
+}
+
+main {
+  /* changed Main background color back to white */
+  background-color: #fff;
+  /* WAS P1-20-20-30PXS */
+  padding: 0.0625rem 1.25rem 1.25rem 1.875rem;
+
+  padding: 1px 20px 20px 30px;
+  overflow: auto;
+  /* text-align:center; */
+}
+
+section {
+  /* three versions visibly created for in class video examples */
+  /* in this version i deleted padding lt anr rt and left padding with 2 arguments */
+  /* sometimes- get suggestion to edit code from VS code //accept and check reults */
+  /* aesthically starts to how word would look// sections stayed stacked and not side by side like in the proir lab */
+  /* readded padding and width when tried to fix about us l=page nav links stacking */
+  /* original section from ch12pacific(ch8-12) was left blank and defaualt at 33% of width-  here added the width again and need to fill out imag data like a -#image-hero- */
+  padding: 1rem 0;
+  width: 100%;
+
+}
+
+h1 {
+  letter-spacing: 0.25em;
+  /* mb0 */
+  margin-bottom: 0;
+  /*  */
+  margin-top: 0;
+}
+/* installing the font family here after h1 and before h2 */
+h1,
+h2,
+h3,
+footer {
+  /* fsa */
+  font-family: Georgia, "Times New Roman", Times, Baskerville, serif;
+}
+h2 {
+  /* c#1976d2 */
+  color: #1976d2;
+  text-shadow: 1px 1px #404040;
+}
+/* instal h3 its its proper location */
+h3 {
+  /* c#003 is an abbreviation of larger number */
+  color: #003;
+  /* text-align: center; */
+}
+
+dt {
+  /* c#002171 */
+  color: #002171;
+}
+/* address{
+    font-style: normal;
+} */
+footer {
+  background-color: #fff;
+  /* fz75% */
+  font-size: 75%;
+  font-style: italic;
+  /* this is a good padding standard with a responsive footer//within aesthetic bounds */
+  padding: 2em;
+  /* txa */
+  text-align: center;
+  max-width: 100vw;
+  /* this allows long words to be broken and wrapped onto the next line */
+  overflow-wrap: break-word;
+}
+
+.resort {
+  /* c#1976d2 */
+  color: #1976d2;
+  /* fwb */
+  font-weight: bold;
+}
+/*  adding multiple images selector, dont repeat yourself*/
+#homehero,
+#yurthero,
+#aboutushero,
+#aboutusgrid, 
+#trailhero,
+#reservations-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18.75rem;
+}
+
+#homehero {
+  background-image: url(images/coast2.jpg);
+}
+#yurthero {
+  background-image: url(images/yurt.jpg);
+}
+#aboutushero {
+  background-image: url(images/coast.jpg);
+}
+#aboutusgrid {
+  background-image: url(images/yurt.jpg);
+}
+#trailhero {
+  background-image: url(images/trail.jpg);
+}
+#reservations-hero {
+  background-image: url(images/reservations.jpg);
+}
+.card-row {
+  /* enables flexbox layout */
+  display: flex;
+  /* DEFAULT- STACK CARDS VERTICALLY WITH SPACING //alighns cards in a column/vertically */
+  flex-direction: column;
+  /* ads space between items */
+  gap: 1rem;
+  /* ensures card row never exceeds viewport width */
+  max-width: 100vw;
+  /* includes padding and border in the elements total width and hieght */
+  box-sizing: border-box;
+  /* adds scrollbars if content overflows */
+  overflow: auto;
+  /* overflow: break-word; */
+}
+/* this is a card selector it targets all section elements inside the .card-row container */
+/* combined the class .card-row section is a descentent selector, which means it will only apply to those section elements inside the card row div, not to sections elswhere on the page*/
+/* is a descendent selector */
+.card-row section {
+  /* SECTIONCANT EXCEED CARD ROW WIDTH -BREAK WORD STUFF*/
+  max-width: 100%;
+  /* includes padding /border in width */
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+
+
+/* a media querrie is a CSS rule that lets you change style based on the screen size or DEVICE TYPE. This makes your site reponsive meaning it looks good on small phones tablets and large monitors */
+/* i dont want to use pixels so im going to use the suggstion //then type my first media querrie// hase multiple methods within the MQ and many instructionsfor logic*/
+/* small screen */
+
+/* */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  /* x */
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* table styles */
+/* table {
+  border: 0.125rem solid #1976d2;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #1976d2;
+  color: #fff;
+}
+td,
+th {
+  border: 0.125rem solid #1976d2;
+  padding: 0.5rem;
+}
+td {
+  text-align: center;
+}
+/*  */
+
+.text {
+  text-align: left;
+}
+/*  */
+
+tr:nth-of-type(odd) {
+  background-color: #ffcd6f;
+}
+/* saved and checked ist step in live server// no effect on pages yet */
+/* hover color change and transition slowly */
+tr:hover {
+  background-color: #e0ffe0;
+  color: #003300;
+}
+tr {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+*/
+/*  gives aesthetics to form //responsivnness didnt appear */
+/*//////////// error /////////on on form also form appeared under container box instead of on or in////////////// */
+/* BASE STYLES */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 32em;
+  margin: 0 auto;
+  padding: 2em 1em;
+  background-color: #f8fafc;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+label {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+  color: #003;
+}
+/*  */
+input,
+textarea {
+  margin-bottom: 0;
+  padding: 0.5em;
+  border: 1px solid #b0bec5;
+  border-radius: 0.25em;
+  font-size: 1em;
+  background: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+input:focus,
+textarea:focus {
+  border-color: #003;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: #003;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.75em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #115293;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.1em;
+  margin: 1em;
+}
+.center > h2,
+.center > h3,
+.center > p {
+  margin: 0;
+}
+/*  flex container and css styling for ist video, at expanion point prior to @media again */
+/* the display FLEX BOX turns the container into a flexbox allowing its children the video and the text to sit side by side naturally */
+.content-row {
+  /*  */
+  display: inline-flexbox;
+  /* my edit- horizontal
+  flex-direction: row; */
+  flex-wrap: wrap;
+
+  gap: 2em;
+  align-items: flex-start;
+  /* align-items: flex-end; */
+  /* align-items: end; */
+  margin-bottom: 2em;
+}
+.content-row video {
+  flex: 0 0 320px;
+  margin: 2em;
+  max-width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* align-self: auto; */
+}
+/* text content styling */
+.text-content {
+  flex: 1;
+
+  min-width: 250px;
+  /* adjusts the video location, yet prior to css styling */
+}
+/* a */
+#demo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+/* ADDES # DEMO AND TEXT AND IMAGES OF ASIDE STAYED STACKED AND DIDNT RETURN TO SIDE BY SIDE FORMAT MAY HAVE TO ADD CARD RO STUFF*/
+/* #demo {
+    -webkit-flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  } */
+
+
+/* a */
+nav {
+  flex: 1;
+}
+main {
+  flex: 7;
+}
+aside {
+  flex: 2;
+}
+
+
+
+
+
+/* ERROR ** at this step img doesnt appear next to text but does stack verticly in reponsive adujustment//tried to fix at content row abow but didnt work - supposed to use aside style from flexbox extra credit assignmnet*/
+/*  add in resposive designs for video/index//if use rem could have odd break points*/
+@media (max-width: 700px) {
+  /* if error remov video addition to content row */
+  .content-row {
+    flex-direction: column;
+  }
+  .content-row video {
+    margin: 1em auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/*  adding some styles after the gallery//gallery GRID layout */
+.gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 2em 0;
+}
+/* gallery image container styles */
+.gallery-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* images- fuller RESPONSIVE IMAGES*/
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+/* figcaption of gallery image //action: balanced symetrical resposive centered */
+.gallery-image figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(20%);
+}
+/* adding a hover effect - still missing the gallery labels//are now the caption overlays*/
+.gallery-image:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* when hover it grows by .05 getting your attention */
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+.gallery-image:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+/* - create an @ media query-i want to control the number of columns//copy and edit */
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+@media (max-width: 32.5rem) {
+  body {
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    /* removesbody margin */
+    margin: 0;
+  }
+  /* for the wrapper width 100% ensures that the wrpaper fills the viewport //the max width 100% prevents it from exceeding the viewport -IF- OTHER STYLES APPLY*/
+  /* THE WIDTH 100% alone is a sufficient property but using width and maxwidth prevents accidental overflow from the inherited styles. the margin 0 and the padding 0 removes spacing so content touches the edges nicely on small screens*/
+  /* #wrapper was @wrapper only caught the error by visual inspection */
+  #wrapper {
+    /* fill viewport width */
+    width: 100%;
+    /* removes max width limit */
+    max-width: 100%;
+    /* removes auto margin for edge to edge */
+    margin: 0;
+    /* removes wrapper padding */
+    padding: 0;
+  }
+  header {
+    background-image: none;
+    padding: 0;
+  }
+  footer {
+    padding: 1em;
+  }
+  /* remeber to add closing brace to 1st media querie before adding secon ERRORS */
+  /* table data from yurts page still showed up as data entry from css here but witout spreadsheet lines- CUT AND PASTED TO ONE NOTE FINAL NOTES them out- SOME ABSTRACT LAYER OF CSS*/
+  /* 
+  
+  able data from yurts page still showed up as data entry from css here but witout spreadsheet lines- CUT AND PASTED TO ONE NOTE FINAL NOTES them out- SOME ABSTRACT LAYER OF CSS
+  
+  */
+ 
+
+/* no visible change //here is alreadyh adptive and respponsive */
+/* adding a secon media query after inspected page for responsivnes in vs code //targets tablets and desk top screens 37.5REM*/
+/*  */
+/* MEDIA QUERY STYLES VERSION vs BASE STYLES  */
+form {
+  max-width: 100%;
+  padding: 1em;
+}
+form label,
+form input,
+form textarea {
+  width: 100%;
+}
+input[type="submit"] {
+  width: 100%;
+  margin-top: 0.5em;
+}
+/* this closing brace on the 1st media query and the secon querry created teh resposivnes even in live server preview// AND IS THE STEPP TAHT PUT THE ACTIVIETES AND YURTS PARAGRAPHS SIDE BY SIDE AGAIN AND SHRINKS DOWN TO A STACK//EACATLY HOW AND WHEN EVERYTHNG OCCURS IS STILL IN LINEAR TIME TRACKING */
+/* ERROR the NAV linkS ARE too close to each other in wide screen view// in narrow acreen they collapse to stack */
+/* large screen */
+@media (min-width: 37.5rem) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li {
+    border-bottom: none;
+    padding: 0 1rem;
+    /* x */
+    max-width: none;
+    /* mw: none; */
+  }
+  /* adjust .card row so cards display side by side with more spacing */
+  .card-row {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 100vw;
+  }
+  .card-row section {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+/* a */
+header,
+main,
+aside,
+nav,
+footer,
+figure,
+figcaption {
+  display: block;
+}
+
+
+  /* ?v */
+}
+
+/* ======================================================
+ the styles written before any @media query are your default styles.
+these rules apply to all devices and screen sizes UNLEESS THEY ARE LATER OVEWRITTEN BY A MEDIA QUERRY. tHINK OF THEM AS YOUR BASE DESIGN. */
